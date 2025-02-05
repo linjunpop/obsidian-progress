@@ -6,13 +6,17 @@
 
 .block-language-obsidian-badge .obsidian-badge_wrapper {
   all: initial;
-
   display: inline-flex;
   flex-flow: column nowrap;
-
+  font-family: 'Roboto', sans-serif;
   background-color: #f3f3f3;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   margin: 0.2em;
+}
+
+.theme-dark .block-language-obsidian-badge .obsidian-badge_wrapper {
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 
 .block-language-obsidian-badge .obsidian-badge_wrapper * {
@@ -32,8 +36,16 @@
   color: #2978ef;
 }
 
+.theme-dark .block-language-obsidian-badge .obsidian-badge_value {
+  color: #4a90e2;
+}
+
 .block-language-obsidian-badge .obsidian-badge_value>span {
   color: #c1d7f9;
+}
+
+.theme-dark .block-language-obsidian-badge .obsidian-badge_value>span {
+  color: #a1c6f9;
 }
 
 .block-language-obsidian-badge .obsidian-badge_label {
@@ -41,16 +53,22 @@
   flex: 1 0 auto;
 }
 
+.theme-dark .block-language-obsidian-badge .obsidian-badge_label {
+  color: #ffffff;
+}
+
 .block-language-obsidian-badge .obsidian-badge_progress-bar {
   flex: 1 1 auto;
-
   background-color: #c1d7f9;
-
   width: 100%;
   height: 0.3rem;
-
   display: flex;
   flex-flow: row nowrap;
+  border-radius: 0.2rem;
+}
+
+.theme-dark .block-language-obsidian-badge .obsidian-badge_progress-bar {
+  background-color: #444444;
 }
 
 .block-language-obsidian-badge .obsidian-badge_progress-bar-fill {
@@ -60,9 +78,17 @@
   border-radius: 0 0 0.2rem 0.2rem;
 }
 
+.theme-dark .block-language-obsidian-badge .obsidian-badge_progress-bar-fill {
+  background-color: #4a90e2;
+}
+
 .block-language-obsidian-badge .obsidian-badge_error {
   padding: 0.1em 0.5em;
   line-height: 1.2em;
   color: red;
   font-size: small;
+}
+
+.theme-dark .block-language-obsidian-badge .obsidian-badge_error {
+  color: #ff4d4d;
 }
